@@ -11,9 +11,11 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize root = _root;
 
 - (void)dealloc
 {
+    [_root release];
     [_window release];
     [super dealloc];
 }
@@ -22,6 +24,8 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+    _root = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
+    [self.window addSubview:_root.view];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

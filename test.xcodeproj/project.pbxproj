@@ -13,6 +13,11 @@
 		95830BA315196B6D004DB52A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95830BA115196B6D004DB52A /* InfoPlist.strings */; };
 		95830BA515196B6D004DB52A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95830BA415196B6D004DB52A /* main.m */; };
 		95830BA915196B6D004DB52A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95830BA815196B6D004DB52A /* AppDelegate.m */; };
+		95830BB215196B87004DB52A /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95830BB015196B87004DB52A /* RootViewController.m */; };
+		95830BB315196B87004DB52A /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95830BB115196B87004DB52A /* RootViewController.xib */; };
+		95830BB915196D79004DB52A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95830BB815196D79004DB52A /* QuartzCore.framework */; };
+		95830BBD15196F28004DB52A /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 95830BBC15196F28004DB52A /* test.jpg */; };
+		95830BC0151979EB004DB52A /* RotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95830BBF151979EB004DB52A /* RotationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +25,19 @@
 		95830B9815196B6D004DB52A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		95830B9A15196B6D004DB52A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		95830B9C15196B6D004DB52A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		95830BA015196B6D004DB52A /* test-Info.plist */ = {isa = PBXFileReference; path = "test-Info.plist"; sourceTree = "<group>"; };
+		95830BA015196B6D004DB52A /* test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "test-Info.plist"; sourceTree = "<group>"; };
 		95830BA215196B6D004DB52A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		95830BA415196B6D004DB52A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		95830BA615196B6D004DB52A /* test-Prefix.pch */ = {isa = PBXFileReference; path = "test-Prefix.pch"; sourceTree = "<group>"; };
-		95830BA715196B6D004DB52A /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		95830BA615196B6D004DB52A /* test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test-Prefix.pch"; sourceTree = "<group>"; };
+		95830BA715196B6D004DB52A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		95830BA815196B6D004DB52A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		95830BAF15196B87004DB52A /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		95830BB015196B87004DB52A /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		95830BB115196B87004DB52A /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		95830BB815196D79004DB52A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		95830BBC15196F28004DB52A /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		95830BBE151979EB004DB52A /* RotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationView.h; sourceTree = "<group>"; };
+		95830BBF151979EB004DB52A /* RotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95830BB915196D79004DB52A /* QuartzCore.framework in Frameworks */,
 				95830B9915196B6D004DB52A /* UIKit.framework in Frameworks */,
 				95830B9B15196B6D004DB52A /* Foundation.framework in Frameworks */,
 				95830B9D15196B6D004DB52A /* CoreGraphics.framework in Frameworks */,
@@ -62,6 +75,7 @@
 		95830B9715196B6D004DB52A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				95830BB815196D79004DB52A /* QuartzCore.framework */,
 				95830B9815196B6D004DB52A /* UIKit.framework */,
 				95830B9A15196B6D004DB52A /* Foundation.framework */,
 				95830B9C15196B6D004DB52A /* CoreGraphics.framework */,
@@ -74,6 +88,11 @@
 			children = (
 				95830BA715196B6D004DB52A /* AppDelegate.h */,
 				95830BA815196B6D004DB52A /* AppDelegate.m */,
+				95830BAF15196B87004DB52A /* RootViewController.h */,
+				95830BB015196B87004DB52A /* RootViewController.m */,
+				95830BB115196B87004DB52A /* RootViewController.xib */,
+				95830BBE151979EB004DB52A /* RotationView.h */,
+				95830BBF151979EB004DB52A /* RotationView.m */,
 				95830B9F15196B6D004DB52A /* Supporting Files */,
 			);
 			path = test;
@@ -85,6 +104,7 @@
 				95830BA015196B6D004DB52A /* test-Info.plist */,
 				95830BA115196B6D004DB52A /* InfoPlist.strings */,
 				95830BA415196B6D004DB52A /* main.m */,
+				95830BBC15196F28004DB52A /* test.jpg */,
 				95830BA615196B6D004DB52A /* test-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -141,6 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				95830BA315196B6D004DB52A /* InfoPlist.strings in Resources */,
+				95830BB315196B87004DB52A /* RootViewController.xib in Resources */,
+				95830BBD15196F28004DB52A /* test.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +175,8 @@
 			files = (
 				95830BA515196B6D004DB52A /* main.m in Sources */,
 				95830BA915196B6D004DB52A /* AppDelegate.m in Sources */,
+				95830BB215196B87004DB52A /* RootViewController.m in Sources */,
+				95830BC0151979EB004DB52A /* RotationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
